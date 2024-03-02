@@ -8,3 +8,9 @@
     font-size: 7px !important;
   }
 }
+@media (max-width: 370px) {
+  .Li_About {
+    font-size: 8px;
+    font-weight: bold;
+  }
+}
