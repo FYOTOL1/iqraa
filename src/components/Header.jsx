@@ -57,7 +57,7 @@ export default function Header() {
                   }`}
                 >
                   <Link
-                    className="text-[9px] sm:text-sm md:text-base"
+                    className="Text_Header text-[9px] sm:text-sm md:text-base"
                     to={e.path}
                   >
                     {e.name}
@@ -65,12 +65,12 @@ export default function Header() {
                   <i
                     className={`${
                       e.icon
-                    } ${"text-[9px] sm:text-sm md:text-base"}`}
+                    } ${"Text_Header text-[9px] sm:text-sm md:text-base"}`}
                   ></i>
                 </li>
               ))}
             <Link
-              className="flex items-center flex-row-reverse gap-2 bg-blue-500 text-white px-2 sm:px-3 md:px-5 py-1 rounded-full transition-all hover:bg-blue-300 text-[9px] sm:text-sm md:text-base"
+              className="Login_Header flex items-center flex-row-reverse gap-2 bg-blue-500 text-white px-2 sm:px-3 md:px-5 py-1 rounded-full transition-all hover:bg-blue-300 text-[9px] sm:text-sm md:text-base"
               to="/login"
             >
               <p>Login</p>
