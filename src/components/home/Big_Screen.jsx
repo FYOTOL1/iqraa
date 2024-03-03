@@ -11,14 +11,14 @@ export default function Big_Screen() {
         />
         <div className="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]">
           <h1 className="text-xl sm:text-xl md:text-3xl lg:text-5xl text-white text-center">
-            Management
-            <span className="text-blue-500 font-bold"> Projects </span>
+            ادارة مشاريع
+            <span className="text-blue-500 font-bold"> التخرج </span>
           </h1>
           <Link
-            className="flex items-center flex-row-reverse gap-2 mt-5 md:mt-10 text-center bg-white py-1 md:py-2 w-fit px-6 sm:px-10 md:px-15 lg:px-20 mx-auto rounded-full transition-all hover:bg-black hover:text-white"
-            to={"https://iqraa.edu.ye/"}
+            className="flex items-baseline flex-row-reverse gap-2 mt-5 md:mt-10 text-center bg-white py-1 md:py-2 w-fit px-6 sm:px-10 md:px-15 lg:px-20 mx-auto rounded-full transition-all hover:bg-black hover:text-white"
+            to={"/login"}
           >
-            <p>Transition</p>
+            <p>ابدأ</p>
             <i className="fa-solid fa-arrow-left"></i>
           </Link>
         </div>

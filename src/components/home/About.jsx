@@ -13,29 +13,29 @@ export default function About() {
         </div>
         <div className="Left w-1/2 h-full p-5 py-6">
           <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#333]">
-            About Us
+            من نحن
           </h1>
           <hr className="my-2" />
           <div className="w-full">
             <ul className="flex flex-col items-start mt-5">
               <li className="Li_About flex items-center flex-row-reverse gap-2 my-[3px] sm:my-1 md:my-2 lg:my-3 text-[12px] sm:text-sm lg:text-lg xl:text-xl text-gray-800">
-                <p>Our market value is more than 140 million dollars</p>
+                <p>قميتنا السوقية تتعدى ال 100 مليون دولار </p>
                 <i className="fa-solid fa-check"></i>
               </li>
               <li className="Li_About flex items-center flex-row-reverse gap-2 my-[3px] sm:my-1 md:my-2 lg:my-3 text-[12px] sm:text-sm lg:text-lg xl:text-xl text-gray-800">
-                <p>We have more than 20 branches all over the world</p>
+                <p>لدينا اكثر من 20 فرع في جميع انحاء العالم</p>
                 <i className="fa-solid fa-check"></i>
               </li>
               <li className="Li_About flex items-center flex-row-reverse gap-2 my-[3px] sm:my-1 md:my-2 lg:my-3 text-[12px] sm:text-sm lg:text-lg xl:text-xl text-gray-800">
-                <p>We have more than 4,000 highly experienced employees</p>
+                <p>لدينا اكثر من 4000 موظف ذو كفاءة وخبرة عالية</p>
                 <i className="fa-solid fa-check"></i>
               </li>
               <li className="Li_About flex items-center flex-row-reverse gap-2 my-[3px] sm:my-1 md:my-2 lg:my-3 text-[12px] sm:text-sm lg:text-lg xl:text-xl text-gray-800">
-                <p>We have implemented and managed more than 12,000 projects</p>
+                <p>قمنا بتنفيذ وادارة اكثر من 12 الف من المشاريع</p>
                 <i className="fa-solid fa-check"></i>
               </li>
               <li className="Li_About flex items-center flex-row-reverse gap-2 my-[3px] sm:my-1 md:my-2 lg:my-3 text-[12px] sm:text-sm lg:text-lg xl:text-xl text-gray-800">
-                <p>We have more than 30 years of experience</p>
+                <p>لدينا خبرة تتعدى ال 40 عاما</p>
                 <i className="fa-solid fa-check"></i>
               </li>
             </ul>

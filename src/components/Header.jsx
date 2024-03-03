@@ -6,33 +6,33 @@ export default function Header() {
   const [ActiveList, setActiveList] = useState(false);
 
   const Sections = [
-    { name: "Home", path: "/", icon: "fa-solid fa-house", active: false },
+    { name: "الرئيسية", path: "/", icon: "fa-solid fa-house", active: false },
     {
-      name: "Groups",
+      name: "مجموعات",
       path: "/groups",
       icon: "fa-solid fa-user-group",
       active: false,
     },
     {
-      name: "Suggestions",
+      name: "اقتراحات",
       path: "/suggestions",
       icon: "fa-solid fa-lightbulb",
       active: false,
     },
     {
-      name: "Projects",
+      name: "مشاريع",
       path: "/projects",
       icon: "fa-solid fa-list-check",
       active: false,
     },
     {
-      name: "Rate",
+      name: "تقيم",
       path: "/rate",
       icon: "fa-solid fa-star-half-stroke",
       active: false,
     },
     {
-      name: "Chat",
+      name: "محادثة",
       path: "/chat",
       icon: "fa-solid fa-comments",
       active: false,
@@ -73,7 +73,7 @@ export default function Header() {
               className="Login_Header flex items-center flex-row-reverse gap-2 bg-blue-500 text-white px-2 sm:px-3 md:px-5 py-1 rounded-full transition-all hover:bg-blue-300 text-[9px] sm:text-sm md:text-base"
               to="/login"
             >
-              <p>Login</p>
+              <p>تسجيل دخول</p>
               <i className="fa-solid fa-user"></i>
             </Link>
           </ul>

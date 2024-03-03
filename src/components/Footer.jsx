@@ -7,11 +7,9 @@ export default function Footer() {
         <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
-
-
               <p className="mt-4 max-w-xs text-gray-500">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
-                non cupiditate quae nam molestias.
+                نحن شركة معتمدة في اكثر من 50 دولة ولدينا تعاملات مع اكثر من 700
+                وزارة و شركة حول العالم
               </p>
 
               <ul className="mt-8 flex gap-6">
@@ -135,7 +133,7 @@ export default function Footer() {
 
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
               <div>
-                <p className="font-medium text-gray-900">Services</p>
+                <p className="font-medium text-gray-900">خدمات</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -143,8 +141,7 @@ export default function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      1on1 Coaching{" "}
+                      تدريب
                     </a>
                   </li>
 
@@ -153,8 +150,7 @@ export default function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      Company Review{" "}
+                      تقييم الشركة
                     </a>
                   </li>
 
@@ -163,8 +159,7 @@ export default function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      Accounts Review{" "}
+                      مراجعة الحسابات
                     </a>
                   </li>
 
@@ -173,8 +168,7 @@ export default function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      HR Consulting{" "}
+                      استشارات الموارد البشرية
                     </a>
                   </li>
 
@@ -183,15 +177,14 @@ export default function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      SEO Optimisation{" "}
+                      تحسين محركات البحث
                     </a>
                   </li>
                 </ul>
               </div>
 
               <div>
-                <p className="font-medium text-gray-900">Company</p>
+                <p className="font-medium text-gray-900">شركة</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -199,8 +192,7 @@ export default function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      About{" "}
+                      عنا
                     </a>
                   </li>
 
@@ -209,8 +201,7 @@ export default function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      Meet the Team{" "}
+                      قابل الفريق
                     </a>
                   </li>
 
@@ -219,15 +210,14 @@ export default function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      Accounts Review{" "}
+                      مراجعة الحسابات
                     </a>
                   </li>
                 </ul>
               </div>
 
               <div>
-                <p className="font-medium text-gray-900">Helpful Links</p>
+                <p className="font-medium text-gray-900">روابط مفيدة</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -235,8 +225,7 @@ export default function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      Contact{" "}
+                      الاتصال
                     </a>
                   </li>
 
@@ -245,8 +234,7 @@ export default function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      FAQs{" "}
+                      الاسئلة الشائعة
                     </a>
                   </li>
 
@@ -255,15 +243,14 @@ export default function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      Live Chat{" "}
+                      الدردشة الحية
                     </a>
                   </li>
                 </ul>
               </div>
 
               <div>
-                <p className="font-medium text-gray-900">Legal</p>
+                <p className="font-medium text-gray-900">قانوني</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -271,8 +258,7 @@ export default function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      Accessibility{" "}
+                      امكانية الوصول
                     </a>
                   </li>
 
@@ -281,8 +267,7 @@ export default function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      Returns Policy{" "}
+                      سياسة الارجاع
                     </a>
                   </li>
 
@@ -291,8 +276,7 @@ export default function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      Refund Policy{" "}
+                      سياسة الاسترجاع
                     </a>
                   </li>
 
@@ -301,8 +285,7 @@ export default function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      {" "}
-                      Hiring Statistics{" "}
+                      احصائيات التوظيف
                     </a>
                   </li>
                 </ul>
@@ -311,7 +294,7 @@ export default function Footer() {
           </div>
 
           <p className="text-xs text-gray-500">
-            &copy; 2022. Company Name. All rights reserved.
+            &copy;{new Date().getFullYear()}. اسم الشركة. كل الحقوق محفوظة.
           </p>
         </div>
       </footer>
