@@ -1,12 +1,12 @@
 import React from "react";
-import Home from "../components/home/Home";
 import LAYOUT from "../components/Layout/LAYOUT.jsx";
+import Groups from "../components/groups/Groups";
 
-export default function HomePage() {
+export default function GroupsPage() {
   return (
     <>
       <LAYOUT>
-        <Home />
+        <Groups />
       </LAYOUT>
     </>
   );

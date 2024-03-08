@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               <p className="mt-4 max-w-xs text-gray-500">
-                نحن شركة معتمدة في اكثر من 50 دولة ولدينا تعاملات مع اكثر من 700
+                نحن شركة معتمدة في اكثر من 50 دولة ولدينا تعاملات مع اكثر من 200
                 وزارة و شركة حول العالم
               </p>
 

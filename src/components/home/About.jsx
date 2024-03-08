@@ -6,6 +6,7 @@ export default function About() {
       <div className="About_Us lg:container flex flex-row-reverse px-2 lg:p-0 mx-auto w-full mt-20 h-[350px] sm:h-[450px] md:h-[500px] outline outline-1 outline-gray-300 rounded-xl overflow-hidden">
         <div className="Right relative w-1/2 h-full overflow-hidden">
           <img
+            loading="lazy"
             className="object-cover w-full h-full"
             src="/team.jpg"
             alt="Error"

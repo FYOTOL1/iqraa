@@ -15,7 +15,7 @@ export default function Contact() {
           <form action="#" className="space-y-8">
             <div>
               <label
-                htmlFor="email"
+                htmlhtmlFor="email"
                 className="block mb-2 text-sm font-medium text-black"
               >
                 بريدك الالكتروني
@@ -30,7 +30,7 @@ export default function Contact() {
             </div>
             <div>
               <label
-                htmlFor="subject"
+                htmlhtmlFor="subject"
                 className="block mb-2 text-sm font-medium text-black"
               >
                 الموضوع
@@ -45,7 +45,7 @@ export default function Contact() {
             </div>
             <div className="sm:col-span-2">
               <label
-                htmlFor="message"
+                htmlhtmlFor="message"
                 className="block mb-2 text-sm font-medium text-black"
               >
                 رسالتك

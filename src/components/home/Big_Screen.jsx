@@ -6,6 +6,7 @@ export default function Big_Screen() {
     <div className="Big_Screen relative w-full h-[500px]">
       <div className="lg:container mx-auto h-full">
         <img
+          loading="lazy"
           className="object-cover brightness-50 h-full w-full"
           src="/leader.jpg"
         />
