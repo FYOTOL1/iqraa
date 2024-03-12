@@ -7,7 +7,7 @@ const ProjectsSlice = createSlice({
       {
         name: "نظام كاشير",
         done: true,
-        new: false,
+        accepted: false,
         date: "20/2/2024",
         about: "نظام كاشير سريع وسلس",
         type: "تقني",
@@ -15,7 +15,7 @@ const ProjectsSlice = createSlice({
       {
         name: "بحث عن البحار",
         done: false,
-        new: true,
+        accepted: true,
         date: "28/6/2024",
         about: "بحث عن الكائنات البحرية وانواعها",
         type: "بيئي",
@@ -23,7 +23,7 @@ const ProjectsSlice = createSlice({
       {
         name: "نظام امن",
         done: true,
-        new: false,
+        accepted: false,
         date: "1/9/2023",
         about: "نظام امني قوي",
         type: "تقني",
@@ -31,7 +31,7 @@ const ProjectsSlice = createSlice({
       {
         name: "نظام مواصلات",
         done: false,
-        new: false,
+        accepted: false,
         date: "20/2/2024",
         about: "نظام مواصلات متقدم وسهل الاستخدام",
         type: "تقني",
@@ -39,7 +39,7 @@ const ProjectsSlice = createSlice({
       {
         name: "نظام كاشير",
         done: true,
-        new: false,
+        accepted: false,
         date: "20/2/2024",
         about: "نظام كاشير سريع وسلس",
         type: "تقني",
@@ -47,7 +47,7 @@ const ProjectsSlice = createSlice({
       {
         name: "بحث عن البحار",
         done: false,
-        new: true,
+        accepted: true,
         date: "28/6/2024",
         about: "بحث عن الكائنات البحرية وانواعها",
         type: "بيئي",
@@ -55,7 +55,7 @@ const ProjectsSlice = createSlice({
       {
         name: "نظام امن",
         done: true,
-        new: false,
+        accepted: false,
         date: "1/9/2023",
         about: "نظام امني قوي",
         type: "تقني",
@@ -63,7 +63,7 @@ const ProjectsSlice = createSlice({
       {
         name: "نظام مواصلات",
         done: false,
-        new: false,
+        accepted: false,
         date: "20/2/2024",
         about: "نظام مواصلات متقدم وسهل الاستخدام",
         type: "تقني",
@@ -71,7 +71,7 @@ const ProjectsSlice = createSlice({
       {
         name: "نظام كاشير",
         done: true,
-        new: false,
+        accepted: false,
         date: "20/2/2024",
         about: "نظام كاشير سريع وسلس",
         type: "تقني",
@@ -79,7 +79,7 @@ const ProjectsSlice = createSlice({
       {
         name: "بحث عن البحار",
         done: false,
-        new: true,
+        accepted: true,
         date: "28/6/2024",
         about: "بحث عن الكائنات البحرية وانواعها",
         type: "بيئي",
@@ -87,7 +87,7 @@ const ProjectsSlice = createSlice({
       {
         name: "نظام امن",
         done: true,
-        new: false,
+        accepted: false,
         date: "1/9/2023",
         about: "نظام امني قوي",
         type: "تقني",
@@ -95,7 +95,7 @@ const ProjectsSlice = createSlice({
       {
         name: "نظام مواصلات",
         done: false,
-        new: false,
+        accepted: false,
         date: "20/2/2024",
         about: "نظام مواصلات متقدم وسهل الاستخدام",
         type: "تقني",

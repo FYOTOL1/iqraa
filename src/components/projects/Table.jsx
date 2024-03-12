@@ -5,7 +5,7 @@ export default function Table() {
   const Store = useSelector((state) => state.PS);
 
   useEffect(() => {
-    console.log(Store?.data);
+    // console.log(Store?.data);
   }, []);
 
   return (
@@ -42,10 +42,10 @@ export default function Table() {
                     <td>
                       <p
                         className={`rounded-full ${
-                          e.new ? "bg-green-500" : "bg-blue-400"
+                          e.accepted ? "bg-blue-500" : "bg-red-500"
                         } w-fit mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-[1px] text-white`}
                       >
-                        {e.new ? "جديد" : "قديم"}
+                        {e.accepted ? "مقبول" : "مرفوض"}
                       </p>
                     </td>
                     <td>{e.date}</td>
@@ -73,10 +73,10 @@ export default function Table() {
                     <td>
                       <p
                         className={`rounded-full ${
-                          e.new ? "bg-green-500" : "bg-blue-400"
+                          e.accepted ? "bg-green-500" : "bg-red-500"
                         } w-fit mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-[1px] text-white`}
                       >
-                        {e.new ? "جديد" : "قديم"}
+                        {e.accepted ? "مقبول" : "مرفوض"}
                       </p>
                     </td>
                     <td>{e.date}</td>
