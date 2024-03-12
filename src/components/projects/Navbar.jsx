@@ -1,7 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { search } from "../../redux/reducers/ProjectsSlice";
 
 export default function Navbar() {
+  const dispatch = useDispatch();
+
+  const Search = (e) => {
+    dispatch(search(e));
+  };
   return (
     <>
       <div className="flex items-center justify-between gap-2 w-full py-2 px-1 md:px-2 lg:px-3 bg-white shadow-md rounded-md outline outline-1 outline-gray-100 text-[8px] sm:text-[12px] md:text-sm lg:text-lg overflow-hidden">
@@ -13,6 +20,7 @@ export default function Navbar() {
             <i className="fa-solid fa-magnifying-glass"></i>
           </label>
           <input
+            onChange={(e) => Search(e.target.value)}
             id="search"
             className="relative h-6 sm:h-8 md:h-10 w-52 lg:w-96 ps-10 pe-2 outline outline-1 outline-gray-100 shadow-sm rounded-[4px] transition-all focus:outline-3 focus:outline-gray-600"
             type="search"
@@ -27,7 +35,7 @@ export default function Navbar() {
             className="flex items-baseline gap-x-1 sm:gap-x-2 px-1 sm:px-3 py-1 sm:py-[6px] bg-green-500 text-white rounded-[4px] transition-all hover:bg-green-400 text-nowrap overflow-hidden"
           >
             <i className="fa-solid fa-plus"></i>
-            <p>انشاء مجموعة</p>
+            <p>انشاء مشروع</p>
           </Link>
         </div>
       </div>

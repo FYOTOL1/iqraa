@@ -1,12 +1,12 @@
 import React from "react";
+import Rate from "../components/rate/Rate";
 import LAYOUT from "../components/Layout/LAYOUT.jsx";
-import Groups from "../components/groups/Groups";
 
-export default function GroupsPage() {
+export default function RatePage() {
   return (
     <>
       <LAYOUT>
-        <Groups />
+        <Rate />
       </LAYOUT>
     </>
   );

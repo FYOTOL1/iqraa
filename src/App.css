@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.Suggestions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
 @media (max-width: 390px) {
   .Text_Header,
   .Login_Header {

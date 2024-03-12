@@ -8,12 +8,6 @@ export default function Header() {
   const Sections = [
     { name: "الرئيسية", path: "/", icon: "fa-solid fa-house", active: false },
     {
-      name: "مجموعات",
-      path: "/groups",
-      icon: "fa-solid fa-user-group",
-      active: false,
-    },
-    {
       name: "اقتراحات",
       path: "/suggestions",
       icon: "fa-solid fa-lightbulb",
