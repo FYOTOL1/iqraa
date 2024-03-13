@@ -25,12 +25,6 @@ export default function Header() {
       icon: "fa-solid fa-star-half-stroke",
       active: false,
     },
-    {
-      name: "محادثة",
-      path: "/chat",
-      icon: "fa-solid fa-comments",
-      active: false,
-    },
   ];
 
   useEffect(() => {
