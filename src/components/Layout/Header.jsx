@@ -25,6 +25,12 @@ export default function Header() {
       icon: "fa-solid fa-star-half-stroke",
       active: false,
     },
+    {
+      name: "لوحة التحكم",
+      path: "/admin/users",
+      icon: "fa-solid fa-star-half-stroke",
+      active: false,
+    },
   ];
 
   useEffect(() => {
