@@ -7,6 +7,7 @@ import SuggestionsPage from "./pages/SuggestionsPage.jsx";
 // Admin
 import AdminHome from "./pages/admin/AdminHome.jsx";
 import AdminUsers from "./pages/admin/AdminUsers.jsx";
+import AdminSuggestions from "./pages/admin/AdminSuggestions.jsx";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         {/* Admin */}
         <Route path="/admin/" element={<AdminHome />} />
         <Route path="/admin/users" element={<AdminUsers />} />
+        <Route path="/admin/suggestions" element={<AdminSuggestions />} />
         <Route
           path="*"
           element={

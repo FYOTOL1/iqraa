@@ -83,7 +83,7 @@ export default function Table() {
 
   return (
     <>
-      <table className="w-full text-center mt-6 bg-white text-[10px] text-xs md:text-sm text-lg">
+      <table className="w-full text-center mt-6 bg-white text-[10px] text-xs md:text-sm lg:text-lg">
         <thead className="h-14 outline outline-1 outline-gray-100 rounded-t-md">
           <tr>
             <th>ID</th>
