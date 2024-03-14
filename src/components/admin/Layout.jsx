@@ -9,13 +9,13 @@ export default function Layout({ children }) {
           <div className="flex items-center justify-between gap-3 bg-[#f2f6ff] sm:p-2 md:p-3 md:px-1 rounded-full h-12 text-xs lg:text-base">
             <div className="flex items-center gap-2 text-xl">
               <i class="fa-solid fa-user flex items-center justify-center p-2 bg-white rounded-full"></i>
-              <div className="sm:text-[10px] md:text-xs lg:text-sm hidden md:block">
+              <div className="sm:text-[10px] md:text-xs lg:text-sm hidden lg:block">
                 <p>Admin</p>
                 <p>{new Date().toLocaleDateString()}</p>
               </div>
             </div>
             <button className="cursor-pointer transition-all rounded-full p-2 md:p-0 h-fit hover:mb-2">
-              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-chevron-down px-2"></i>
             </button>
           </div>
           {/* Pages */}
