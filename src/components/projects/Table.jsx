@@ -1,35 +1,35 @@
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { GetProjects } from "../../redux/reducers/ProjectsSlice";
 
 export default function Table() {
-  const Store = useSelector((state) => state.PS);
+  const Store = useSelector((state) => state.projects);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    // console.log(Store?.data);
+    dispatch(GetProjects());
   }, []);
 
   return (
     <>
-      <div className="mt-8 text-[8px] sm:text-[12px] md:text-sm lg:text-lg">
+      <div className="mt-3 md:mt-8 text-[8px] sm:text-[12px] md:text-sm lg:text-lg">
         <table className="w-full">
           <thead className="w-full bg-gray-100 outline outline-1 outline-gray-100">
-            <tr className="h-12">
-              <th className="w-1/6">الاسم</th>
+            <tr className="h-7 md:h-10 lg:h-12">
+              <th className="w-1/6">اسم الشروع</th>
               <th className="w-1/6">حالة التسليم</th>
-              <th className="w-1/6">حالته</th>
+              <th className="w-1/6">الموضوع</th>
               <th className="w-1/6">تاريخ</th>
-              <th className="w-1/6">عن</th>
-              <th className="w-1/6">نوع</th>
             </tr>
           </thead>
           <tbody>
-            {Store.filter.length
+            {Store && Store.filter
               ? Store?.filter?.map((e, i) => (
                   <tr
                     key={i}
                     className="h-8 sm:h-12 md:h-14 lg:h-16 outline outline-1 outline-gray-200 text-center"
                   >
-                    <td>{e.name}</td>
+                    <td>{e.project_name}</td>
                     <td>
                       <p
                         className={`rounded-full ${
@@ -39,28 +39,20 @@ export default function Table() {
                         {e.done ? "لقد تم" : "لم يتم"}
                       </p>
                     </td>
-                    <td>
-                      <p
-                        className={`rounded-full ${
-                          e.accepted ? "bg-blue-500" : "bg-red-500"
-                        } w-fit mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-[1px] text-white`}
-                      >
-                        {e.accepted ? "مقبول" : "مرفوض"}
-                      </p>
-                    </td>
-                    <td>{e.date}</td>
+                    <td>{new Date(e.date).toLocaleDateString()}</td>
                     <td className="max-w-10 overflow-hidden text-nowrap">
-                      {e.about}
+                      {e.subject}
                     </td>
-                    <td>{e.type}</td>
                   </tr>
                 ))
-              : Store?.data?.map((e, i) => (
+              : Store &&
+                Store.data &&
+                Store?.data?.map((e, i) => (
                   <tr
                     key={i}
                     className="h-8 sm:h-12 md:h-14 lg:h-16 outline outline-1 outline-gray-200 text-center"
                   >
-                    <td>{e.name}</td>
+                    <td>{e.project_name}</td>
                     <td>
                       <p
                         className={`rounded-full ${
@@ -70,20 +62,10 @@ export default function Table() {
                         {e.done ? "لقد تم" : "لم يتم"}
                       </p>
                     </td>
-                    <td>
-                      <p
-                        className={`rounded-full ${
-                          e.accepted ? "bg-green-500" : "bg-red-500"
-                        } w-fit mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-[1px] text-white`}
-                      >
-                        {e.accepted ? "مقبول" : "مرفوض"}
-                      </p>
-                    </td>
-                    <td>{e.date}</td>
                     <td className="max-w-10 overflow-hidden text-nowrap">
-                      {e.about}
+                      {e.subject}
                     </td>
-                    <td>{e.type}</td>
+                    <td>{new Date(e.date).toLocaleDateString()}</td>
                   </tr>
                 ))}
           </tbody>

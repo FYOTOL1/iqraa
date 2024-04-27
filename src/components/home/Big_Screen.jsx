@@ -7,6 +7,7 @@ export default function Big_Screen() {
       <div className="lg:container mx-auto h-full">
         <img
           loading="lazy"
+          loading="lazy"
           className="object-cover brightness-50 h-full w-full"
           src="/leader.jpg"
         />
@@ -15,13 +16,15 @@ export default function Big_Screen() {
             ادارة مشاريع
             <span className="text-blue-500 font-bold"> التخرج </span>
           </h1>
-          <Link
-            className="flex items-baseline flex-row-reverse gap-2 mt-5 md:mt-10 text-center bg-white py-1 md:py-2 w-fit px-6 sm:px-10 md:px-15 lg:px-20 mx-auto rounded-full transition-all hover:bg-black hover:text-white"
-            to={"/login"}
-          >
-            <p>ابدأ</p>
-            <i className="fa-solid fa-arrow-left"></i>
-          </Link>
+          {!localStorage.getItem("id") ? (
+            <Link
+              className="flex items-baseline flex-row-reverse gap-2 mt-5 md:mt-10 text-center bg-white py-1 md:py-2 w-fit px-6 sm:px-10 md:px-15 lg:px-20 mx-auto rounded-full transition-all hover:bg-black hover:text-white"
+              to={"/login"}
+            >
+              <p>ابدأ</p>
+              <i className="fa-solid fa-arrow-left"></i>
+            </Link>
+          ) : null}
         </div>
       </div>
     </div>

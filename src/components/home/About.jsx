@@ -7,6 +7,7 @@ export default function About() {
         <div className="Right relative w-1/2 h-full overflow-hidden">
           <img
             loading="lazy"
+            loading="lazy"
             className="object-cover w-full h-full"
             src="/team.jpg"
             alt="Error"
@@ -20,7 +21,7 @@ export default function About() {
           <div className="w-full">
             <ul className="flex flex-col items-start mt-5">
               <li className="Li_About flex items-center flex-row-reverse gap-2 my-[3px] sm:my-1 md:my-2 lg:my-3 text-[12px] sm:text-sm lg:text-lg xl:text-xl text-gray-800">
-                <p>قميتنا السوقية تتعدى ال 100 مليون دولار </p>
+                <p>الاكثر اتقانا لادارة المشاريع</p>
                 <i className="fa-solid fa-check"></i>
               </li>
               <li className="Li_About flex items-center flex-row-reverse gap-2 my-[3px] sm:my-1 md:my-2 lg:my-3 text-[12px] sm:text-sm lg:text-lg xl:text-xl text-gray-800">

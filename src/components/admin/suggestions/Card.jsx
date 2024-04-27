@@ -1,6 +1,15 @@
 import React from "react";
+import { PatchSuggestion } from "../../../redux/reducers/SuggestionsSlice";
 
-export default function Card({ name, date, p }) {
+export default function Card({ name, date, p, dispatch, e }) {
+  const Accept = () => {
+    dispatch(PatchSuggestion({ id: e.id, status: 3 }));
+  };
+
+  const unAccept = () => {
+    dispatch(PatchSuggestion({ id: e.id, status: 1 }));
+  };
+
   return (
     <>
       <div className="flex justify-between flex-col bg-white outline outline-1 outline-gray-100 shadow-md p-3 h-[150px] rounded-sm overflow-hidden">
@@ -12,14 +21,36 @@ export default function Card({ name, date, p }) {
         <p className="text-gray-500 text-xs">{date}</p>
         <p className="text-sm">{p}</p>
         {/* Actions */}
-        <div className="flex items-center flex-row-reverse gap-2">
-          <button className="py-[2px] w-1/2 bg-[#40a396] text-white rounded-full transition-all hover:opacity-75">
-            قبول
+        {e.status == 1 ? (
+          <button
+            disabled
+            className="py-[2px] w-full bg-red-500 text-white rounded-full opacity-75"
+          >
+            مرفوض
           </button>
-          <button className="py-[2px] w-1/2 bg-white text-black border border-gray-400 rounded-full transition-all hover:opacity-75">
-            رفض
+        ) : e.status == 2 ? (
+          <div className="flex items-center flex-row-reverse gap-2">
+            <button
+              onClick={(e) => Accept()}
+              className="py-[2px] w-1/2 bg-[#40a396] text-white rounded-full transition-all hover:opacity-75"
+            >
+              قبول
+            </button>
+            <button
+              onClick={(e) => unAccept()}
+              className="py-[2px] w-1/2 bg-white text-black border border-gray-400 rounded-full transition-all hover:opacity-75"
+            >
+              رفض
+            </button>
+          </div>
+        ) : e.status == 3 ? (
+          <button
+            disabled
+            className="py-[2px] w-full bg-[#40a396] text-white rounded-full opacity-75"
+          >
+            مقبول
           </button>
-        </div>
+        ) : null}
       </div>
     </>
   );
