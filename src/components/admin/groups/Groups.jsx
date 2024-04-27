@@ -30,16 +30,6 @@ export default function Groups() {
             </button>
             <button
               onClick={() => {
-                setFilter(1);
-                dispatch(GetGroups());
-              }}
-              className="flex items-center justify-center gap-2 bg-white shadow-sm rounded-lg h-[28px] sm:h-[33px] w-36 transition-all hover:bg-[#333] hover:text-white"
-            >
-              <p>تم الرفض</p>
-              <i className="fa-regular fa-face-frown mt-[7px]"></i>
-            </button>
-            <button
-              onClick={() => {
                 setFilter(2);
                 dispatch(GetGroups());
               }}
